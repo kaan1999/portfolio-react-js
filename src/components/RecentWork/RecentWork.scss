@@ -1,0 +1,20 @@
+@use "../../styles/main" as *;
+
+.recent-work {
+    min-width:max-content;
+    .recent-work__img {
+        width: 27.8125em;
+        height: 18.75em;
+        margin-bottom: 2.5em;
+    }
+    .recent-work__container {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 1.25em;
+
+        .recent-work__text {
+            max-width: 27.8125em;
+        }
+    }
+}

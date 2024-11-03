@@ -1,0 +1,16 @@
+.case-studies {
+    margin: 5em 0;
+    padding: 0 1em;
+    .case-studies__container {
+        max-width: 897px;
+        margin: 0 auto;
+        .case-studies__intro {
+            margin-bottom: 3.75em;
+        }
+        .case-studies__works {
+            display: flex;
+            flex-direction: column;
+            gap: 5em;
+        }
+    }
+}

@@ -1,0 +1,12 @@
+@use "../../styles/main" as *;
+
+.intro {
+    text-align: center;
+    .intro__title {
+        margin-bottom: .3em;
+    }
+    .intro__text {
+        max-width: 40.7em;
+        margin: 0 auto;
+    }
+}

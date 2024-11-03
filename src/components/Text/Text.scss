@@ -1,0 +1,5 @@
+@use "../../styles/main" as *;
+
+.text {
+    @include style-text($fs-text, 400, $clr-text, 1.7);
+}

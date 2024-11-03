@@ -1,0 +1,51 @@
+@use "../../styles/main" as *;
+
+$current-fs: 0;
+
+.btn {
+    font-size: 1em;
+    display: inline-flex;
+    align-items: center;
+    gap: .625em;
+    border: none;
+    border-radius: .3em;
+    padding: 1em 8.846875em;
+    cursor: pointer;
+
+    .btn__text {
+        @include style-text(inherit, bold, white);
+    }
+    i {
+        @include style-text(inherit, bold, white);
+    }
+    &__bigger {
+        padding: 1.3125em 4em;
+    }
+    &__smaller {
+        font-size: .875;
+        padding: .7em 1.7em;
+    }
+    &__bg-green {
+        background-color: $bg-btn-green;
+    }
+    &__bg-orange {
+        background-color: $bg-btn-orange;
+    }
+    &__bg-blue {
+        background-color: $bg-btn-blue;
+    }
+    &__bg-teal {
+        background-color: $bg-btn-teal;
+    }
+    &__border {
+        border: 1px solid $clr-border-green;
+    }
+    &__box-shadow {
+        box-shadow: 1px 3px 12px 0 $bg-btn-green;
+    }
+    &:hover {
+        .btn__text, i {
+            opacity: .8;
+        }
+    }
+}

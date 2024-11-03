@@ -1,0 +1,36 @@
+@use "../../styles/main" as *;
+
+.get-in-touch {
+    background-color: $clr-dark;
+    padding: 5em 2em;
+    
+    .get-in-touch__container {
+        display: flex;
+        flex-direction: column;
+        gap: 2.5em;
+    }
+    .get-in-touch__form {
+        max-width: 21.875em;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+
+        .get-in-touch__lbl {
+            @include style-text(.75em, 600, $clr-light);
+            margin-bottom: .3125em;
+        }
+        .get-in-touch__input {
+            height: 3.33em;
+            padding: 2px 1em;
+            background-color: #F8F8F8;
+            border: 1px solid #D8D8D8;
+            border-radius: .3em;
+            margin-bottom: 1.6em;
+            @include style-text(.75em, 400, #191616, 1.75);
+        }
+        .get-in-touch__txtarea {
+            height: 10em;
+            resize: none;
+        }
+    }
+}

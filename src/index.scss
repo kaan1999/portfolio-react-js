@@ -1,0 +1,9 @@
+@use 'styles/variables';
+
+:root {
+  font-family: variables.$font-primary;
+}
+
+body {
+  font-size: variables.$fs-body;
+}

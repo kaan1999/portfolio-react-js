@@ -1,0 +1,26 @@
+@use "../../styles/main" as *;
+
+.testimonials {
+    background-color: $clr-dark;
+    padding: 5em 2em;
+
+    .testimonials__grid {
+        display: grid;
+        justify-content: center;
+        column-gap: 1.875em;
+        row-gap: 3.875em;
+        grid-template-columns: repeat(2, 27.8115em);
+        grid-template-rows: repeat(2, 13.25em);
+        margin-top: 3.75em;
+    }
+}
+
+@media screen and (max-width: 776px) {
+    .testimonials {
+        padding: 5em 2em;
+        .testimonials__grid {
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(4, auto);
+        }
+    }
+}

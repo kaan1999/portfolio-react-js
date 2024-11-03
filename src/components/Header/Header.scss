@@ -1,0 +1,111 @@
+@use "../../styles/main" as *;
+
+.header {
+  
+  background-color: $clr-dark;
+  .header__container {
+    visibility: visible;
+    
+  }
+  &__container {
+    width: 100%;
+    max-width: 69.375em;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: $bg-header-footer;
+    padding: 1.5625em 0;
+    border-bottom-left-radius: 0.75em;
+    border-bottom-right-radius: 0.75em;
+    &--visible {
+      visibility: visible !important;
+    }
+    &--hidden {
+      visibility: hidden;
+    }
+    &--width-0{
+        width: 0;
+    }
+    &--width {
+        width: 75%;
+    }
+    .header__bars {
+      position: absolute;
+      z-index: 100;
+      visibility: hidden;
+      color: #6d6d6d;
+      font-size: 1.5em;
+      top: 1em;
+      left: 1em;
+    }
+    
+  }
+  &__nav {
+    display: flex;
+    gap: 4.375em;
+
+    a {
+      @include style_text($fs-text, 400, $clr-text);
+      text-transform: capitalize;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  &__social {
+    display: flex;
+    gap: 1.5625em;
+
+    a {
+      @include style-text(1.125em, normal, #5f5f5f, 0.95);
+      &:hover {
+        opacity: 0.75;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 776px){
+    .header__container {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 776px) {
+  .header {
+    position: relative;
+    .header__container {
+      visibility: hidden;
+    }
+    &__container {
+      .header__bars {
+        visibility: visible;
+      }
+      position: fixed;
+      left: 0;
+      flex-direction: column;
+      align-items: center;
+      justify-content: start;
+      gap: 1.75em;
+      height: 100%;
+      z-index: 99;
+      transition: 0.5s;
+      .header__nav {
+        flex-direction: column;
+        text-align: center;
+        gap: 1.5em;
+
+        a {
+          font-size: 2em;
+          transition: 0.5s;
+        }
+      }
+      .header__social {
+        a {
+          font-size: 2em;
+        }
+      }
+    }
+  }
+}

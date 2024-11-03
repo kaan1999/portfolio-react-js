@@ -1,0 +1,44 @@
+@use "../../styles/main" as *;
+
+.testimonial {
+    width: 27.8125em;
+    height: auto;
+    padding: 1px;
+    background: linear-gradient(to right, #484848, $clr-dark);
+    border-radius: .4em;
+    .testimonial__container {
+        background-clip: padding-box;
+        border-radius: inherit;
+        height: 100%;
+        background-color: $clr-dark;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 1.875em;
+        .testimonial__client {
+            display: flex;
+            gap: 1.25em;
+            align-items: center;
+
+            .testimonial__img {
+                width: 3.125em;
+                height: 3.125em;
+                border-radius: 50%;
+            }
+            .testimonial__name {
+                font-family: $font-secondary;
+                @include style-text(1.125em, 600, $clr-light);
+                text-transform: capitalize;
+            }
+        }
+    }
+}
+@media screen and (max-width: 776px){
+    .testimonial {
+        width: 100%;
+        .testimonial__container {
+            gap: 1em;
+        }
+    }
+
+}

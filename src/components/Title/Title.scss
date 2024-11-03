@@ -1,0 +1,18 @@
+@use "../../styles/main" as *;
+
+.title {
+    font-family: $font-secondary;
+    @include style-text($fs-title, 700, $clr-light);
+    &--larger {
+        font-size: 2.75em;
+    }
+    &--smaller {
+        font-size: $fs-subtitle;
+    }
+    &--dark {
+        color: $clr-dark;
+    }
+    &--center {
+        text-align: center;
+    }
+}

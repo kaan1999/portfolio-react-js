@@ -1,0 +1,13 @@
+@mixin style-text($fontSize: 1em, $fontWeight: normal, $color: white, $lineHeight: normal, $letterSpacing: normal){
+    font-size: $fontSize;
+    line-height: $lineHeight;
+    font-weight: $fontWeight;
+    color: $color;
+    letter-spacing: $letterSpacing;
+}
+
+@mixin style-button($bgColor, $paddingTopBottom, $paddingLeftRight){
+    display: inline-block;
+    padding: $paddingTopBottom $paddingLeftRight;
+    background-color: $bgColor;
+}

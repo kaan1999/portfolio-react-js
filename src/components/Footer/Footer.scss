@@ -1,0 +1,7 @@
+@use "../../styles/main" as *;
+
+.footer {
+    background-color: $bg-header-footer;
+    text-align: center;
+    padding: 1.625em 0;
+}

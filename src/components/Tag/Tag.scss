@@ -1,0 +1,20 @@
+@use "../../styles/main" as *;
+
+.tag {
+    display: inline-block;
+    @include style-text(.75em, 600, white, 2);
+    padding: 0 .8em;
+    border-radius: 1em;
+    &__orange {
+        background-color: #FFF6E9;
+        color: $bg-btn-orange;
+    }
+    &__blue {
+        background-color: #D0E6FF;
+        color: $bg-btn-blue;
+    }
+    &__teal {
+        background-color: #E0FFF8;
+        color: $bg-btn-teal;
+    }
+}
